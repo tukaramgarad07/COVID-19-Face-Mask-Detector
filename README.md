@@ -82,8 +82,3 @@ To set up the project on your local machine, follow these steps:
     - `mask_detection.py`: Runs the face mask detection on live webcam feed.
     - `train_model.py`: Used for training the model.
 
-2. **Observe the Output**
-
-    - The application will open a webcam feed.
-    - It will display whether a person is wearing a mask or not in real-time.
-
