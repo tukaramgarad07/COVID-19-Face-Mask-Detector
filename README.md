@@ -73,7 +73,8 @@ To set up the project on your local machine, follow these steps:
 
 
 
-Here are some advantages of the **COVID-19 Face Mask Detector** project that you can include in the `README.md`:
+
+
 
 ## Advantages
 
