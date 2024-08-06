@@ -2,19 +2,31 @@
 
 ## Overview
 
-This project involves creating a real-time face mask detection system using Python, OpenCV, and Keras. The system is designed to identify whether a person in a webcam feed is wearing a mask or not. It was developed in response to the World Health Organization’s guidelines on mask-wearing during the COVID-19 pandemic.
+This project provides a real-time face mask detection system using Python, OpenCV, and Keras. The system detects whether a person in a webcam feed is wearing a mask or not. It was developed to comply with health guidelines during the COVID-19 pandemic.
 
 ## Technologies Used
 
 - **Python**: Programming language used for implementation.
-- **OpenCV**: Library for computer vision tasks, including face detection.
-- **Keras**: Deep learning library used for building and training the neural network model.
+- **OpenCV**: Library for computer vision tasks.
+- **Keras**: Library for building and training neural network models.
 
 ## Project Features
 
-- **Real-time Mask Detection**: Analyzes webcam feed to detect if a person is wearing a mask or not.
-- **Model Accuracy**: Trained with a diverse dataset to ensure reliable performance.
-- **Customizable**: The model can be retrained with different datasets for improved accuracy or specific use cases.
+- **Real-time Mask Detection**: Detects mask-wearing status from live webcam feed.
+- **Model Accuracy**: Trained with a comprehensive dataset to ensure high reliability.
+
+## Advantages
+
+- **Utilized a Convolutional Neural Network (CNN)**: Accurately detects and classifies individuals as wearing or not wearing masks in real-time, improving public safety during the pandemic.
+- **Implemented OpenCV for Real-Time Processing**: Enables instantaneous detection and alerting for compliance enforcement in public spaces.
+- **Employed Data Augmentation Techniques**: Enhances the model’s robustness, ensuring high accuracy and reliability across diverse scenarios and environments.
+- **Enhanced Public Health Monitoring**: Assists in ensuring compliance with mask-wearing guidelines, crucial for preventing the spread of COVID-19 and other respiratory illnesses.
+- **Scalability and Adaptability**: The model can be retrained with new datasets to adapt to different environments or to improve accuracy.
+- **User-Friendly Interface**: Real-time detection script with visual indicators showing mask-wearing status.
+- **Reduced Manual Monitoring**: Automates mask compliance checks, reducing the need for manual oversight.
+- **Educational Value**: Demonstrates the application of computer vision and deep learning in practical contexts.
+- **Customizable for Different Needs**: Can be integrated with other systems or modified for specific requirements.
+- **Supports Health Safety Initiatives**: Contributes to public health efforts by providing a tool for mask-wearing adherence.
 
 ## Dataset
 
@@ -22,7 +34,7 @@ The model was trained on a dataset consisting of 1376 images:
 - **Images with Masks**: 690
 - **Images without Masks**: 686
 
-The dataset can be downloaded from [here](URL to dataset).
+You can download the dataset from [here](URL to dataset).
 
 ## Installation
 
@@ -55,49 +67,23 @@ To set up the project on your local machine, follow these steps:
 
 ## Usage
 
-1. **Run the Real-Time Mask Detection**
+1. **Run the Application**
 
     ```bash
     python mask_detection.py
     ```
 
-    - This script will open a webcam feed and display whether a person is wearing a mask or not in real-time.
-
-2. **Train the Model**
+    or
 
     ```bash
     python train_model.py
     ```
 
-    - This script trains the face mask detection model using the images in the `./train` and `./test` directories. The trained models will be saved as `model2-{epoch:03d}.model`.
+    - `mask_detection.py`: Runs the face mask detection on live webcam feed.
+    - `train_model.py`: Used for training the model.
 
+2. **Observe the Output**
 
+    - The application will open a webcam feed.
+    - It will display whether a person is wearing a mask or not in real-time.
 
-
-
-
-## Advantages
-
-1. **Enhanced Public Health Monitoring**: 
-   - The system helps in ensuring compliance with mask-wearing guidelines, which is crucial for preventing the spread of COVID-19 and other respiratory illnesses.
-
-2. **Real-Time Detection**:
-   - Provides immediate feedback on mask usage, enabling quick actions in environments where mask compliance is critical, such as public transport, offices, and healthcare facilities.
-
-3. **Scalability and Adaptability**:
-   - The model can be retrained with new datasets to adapt to different environments or to improve accuracy. This makes the system versatile for various applications and conditions.
-
-4. **User-Friendly Interface**:
-   - The real-time detection script is straightforward and easy to use, with visual indicators (rectangles and text) clearly showing mask-wearing status.
-
-5. **Reduced Manual Monitoring**:
-   - Automates the process of checking mask compliance, reducing the need for manual oversight and allowing for efficient monitoring in busy environments.
-
-6. **Educational Value**:
-   - Demonstrates the application of computer vision and deep learning in a practical context, providing valuable insights into the development and deployment of machine learning models.
-
-7. **Customizable for Different Needs**:
-   - Can be integrated with other systems or modified to fit specific requirements, such as adjusting the detection thresholds or adding additional features like alert systems.
-
-8. **Supports Health Safety Initiatives**:
-   - Contributes to ongoing public health efforts by providing a tool that supports mask-wearing adherence, which is a key measure in controlling the spread of infectious diseases.
